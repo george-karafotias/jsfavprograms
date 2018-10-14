@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Useful Programs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Useful Programs</h1>
+    <div>
+        <button id="addProgram" class="posButton">Add Program</button>
+        <button id="deleteAll" class="negButton">Delete All</button>
+    </div>
+    
+    <div id="addProgramForm" style="display: none">
+        <div id="addProgramError"></div>
+        <table>
+            <tr>
+                <td><label for="programName">Name: </label></td>
+                <td><input type="text" id="programName" class="formInput"></input></td>
+            </tr>
+            <tr>
+                <td><label for="programWebsite">Website: </label></td>
+                <td><input type="text" id="programWebsite" class="formInput"></input></td>
+            </tr>
+            <tr>
+                <td><label for="programDescription">Description: </label></td>
+                <td><input type="text" id="programDescription" class="formInput"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="actionRow">
+                    <button id="cancelAddProgram" class="negButton">Cancel</button>
+                    <button id="saveProgram" class="posButton">Save</button>
+                </td>
+            </tr>
+        </table>   
+    </div>
+    <div id="results" style="display:none">
+        <input type="text" id="myInput" onkeyup="searchForPrograms()" placeholder="Search.." title="Type in a keyword" />
+        <table id="programs">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Website</th>
+                    <th>Description</th>
+                    <th colspan="2">Functions</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

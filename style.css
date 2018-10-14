@@ -1,0 +1,88 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#results {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#programs {
+    border-collapse: collapse;
+    width: 100%;
+}
+#programs td, #programs th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+#programs tr:nth-child(even){background-color: #f2f2f2;}
+#programs tr:hover {background-color: #ddd;}
+#programs th {
+    padding: 10px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.programName {
+    width:20%;
+}
+.programWebsite {
+    width:35%;
+}
+.programDescription {
+    width:35%;
+}
+.programName input[type="text"], .programWebsite input[type="text"], .programDescription input[type="text"] {
+    width:100%;
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:1.05em;
+}
+.posButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.negButton {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#addProgramForm {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.actionRow {
+    padding-top:20px;
+}
+input[type=text].formInput {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width:400px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#addProgramError {
+    margin-bottom:10px;
+    color:red;
+}
+#myInput {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    min-width:300px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
